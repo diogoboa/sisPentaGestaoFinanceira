@@ -11,9 +11,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @SpringBootApplication
-@EntityScan({"penta.sisPenta"})
-@EnableJpaRepositories({"penta.sisPenta"})
-@ComponentScan({"penta.sisPenta", "penta.sisPenta.Controller", "penta.sisPenta.Configuration", "penta.sisPenta.Reports"})
+@EntityScan({"penta.sisPenta.gestaoFinanceira"})
+@EnableJpaRepositories({"penta.sisPenta.gestaoFinanceira"})
+@ComponentScan({"penta.sisPenta.gestaoFinanceira", "penta.sisPenta.Controller", "penta.sisPenta.Configuration", "penta.sisPenta.Reports"})
 @EnableCaching
 @Configuration
 public class Application {

@@ -2,6 +2,8 @@ package penta.sisPenta.gestaoFinanceira.Mensageria;
 
 
 
+import jakarta.annotation.security.PermitAll;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -18,7 +20,8 @@ public class Controlador {
 
 */
 
-    @PostMapping("/enviarMensagem")
+    @GetMapping("/api/enviarMensagem")
+
     public String enviarMensagem() {
 
 

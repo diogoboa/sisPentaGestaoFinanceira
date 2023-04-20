@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e144545-3e3c-4745-be99-ff5ae7a67e11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Controlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3e144545-3e3c-4745-be99-ff5ae7a67e11" name="Changes" comment="inicializacao do projeto">
+      <change afterPath="$PROJECT_DIR$/.run/Application.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Security/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grupo/penta/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Controlador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,34 +43,24 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Diogo Boaventura/Documents/sisPentaGestaoFinanceira/src/main/resources",
+    "last_opened_file_path": "C:/Users/Diogo Boaventura/Documents/sisPentaGestaoFinanceira/src/main/java/penta/sisPenta/gestaoFinanceira/Configuracoes",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Diogo Boaventura\Documents\sisPentaGestaoFinanceira\src\main\java\penta\sisPenta\gestaoFinanceira\Configuracoes" />
       <recent name="C:\Users\Diogo Boaventura\Documents\sisPentaGestaoFinanceira\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="penta.sisPenta.gestaoFinanceira.Security" />
+      <recent name="penta.sisPenta.gestaoFinanceira.Configuracoes" />
       <recent name="penta.sisPenta.gestaoFinanceira.Mensageria" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="penta.sisPenta.gestaoFinanceira.Application" />
-      <module name="sisPenta.gestaoFinanceira" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="penta.sisPenta.gestaoFinanceira.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="sisPentaGestaoFinanceira" />
       <method v="2">
@@ -103,6 +89,25 @@
       <option name="presentableId" value="Default" />
       <updated>1682014814510</updated>
     </task>
+    <task id="LOCAL-00001" summary="inicializacao do projeto">
+      <created>1682016077872</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682016077872</updated>
+    </task>
+    <task id="LOCAL-00002" summary="inicializacao do projeto">
+      <created>1682016089654</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682016089654</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="inicializacao do projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="inicializacao do projeto" />
   </component>
 </project>
