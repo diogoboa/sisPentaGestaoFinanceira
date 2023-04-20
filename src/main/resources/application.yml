@@ -1,0 +1,57 @@
+
+
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sisPenta
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+    initialization-mode: always
+
+    rabbitmq:
+      host: 127.0.0.1
+      port: 5672
+      username: super
+      password: super
+
+
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      jakarta.persistence.sharedCache.mode: ENABLE_SELECTIVE
+      hibernate.format_sql: true
+    open-in-view: false
+    show-sql: false
+    generate-ddl: true
+    hibernate.ddl-auto: update
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+
+
+
+server:
+  port: 80
+  address: 0.0.0.0
+  tomcat:
+    max-threads: 200
+
+
+
+hibernate:
+  connection.isolation: 40
+
+
+
+bucket4j:
+  filters:
+    - url: /api/**
+      rate-limits:
+        - capacity: 10
+          refill-interval: 1 minute
+          refill-amount: 10
