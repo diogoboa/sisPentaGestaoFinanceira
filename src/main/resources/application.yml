@@ -4,11 +4,12 @@
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/sisPenta
+    url: jdbc:postgresql://localhost:5432/sisPentaGestao
     username: postgres
     password: postgres
     driverClassName: org.postgresql.Driver
     initialization-mode: always
+
 
     rabbitmq:
       host: 127.0.0.1

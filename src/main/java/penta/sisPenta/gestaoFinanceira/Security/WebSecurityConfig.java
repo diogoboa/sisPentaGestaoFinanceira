@@ -13,19 +13,14 @@ import org.springframework.security.config.core.GrantedAuthorityDefaults;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
+import org.springframework.security.web.csrf.CsrfTokenRequestAttributeHandler;
 
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity(securedEnabled = true, jsr250Enabled = true,prePostEnabled = true)
 public class WebSecurityConfig {
 
-
-
-   /* @Bean
-    public UserDetailsServiceImplements userDetailsServiceImplements() {
-        return new UserDetailsServiceImplements();
-    }
-*/
 
     @Bean
     public PasswordEncoder passwordEncoder()
@@ -42,8 +37,14 @@ public class WebSecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception
     {
+        CsrfTokenRequestAttributeHandler requestHandler = new CsrfTokenRequestAttributeHandler();
+        requestHandler.setCsrfRequestAttributeName(null);
 
-        http
+        http.
+            csrf((csrf) -> csrf
+                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+                .csrfTokenRequestHandler(requestHandler)
+            )
             .authorizeHttpRequests((authz) -> authz
                     .requestMatchers("/*", "*","/app/**","/images/**","/arquivos/**","/static/**","/fonts/**","/js/**","/css/**", "/webfonts**", "/api/login").permitAll()
                     .anyRequest().authenticated()
@@ -54,13 +55,6 @@ public class WebSecurityConfig {
 
     }
 
-      /*http
-                .csrf().disable()
-                .authorizeRequests()
-                .antMatchers("/*","/app/**","/images/**","/fonts/**","/js/**","/css/**", "/api/login").permitAll()
-                .anyRequest().authenticated()
-                .and()
-                .httpBasic();*/
 
 
     @Bean

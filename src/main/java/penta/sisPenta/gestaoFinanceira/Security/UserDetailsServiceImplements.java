@@ -6,10 +6,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import penta.sisPenta.Model.Role;
-import penta.sisPenta.Model.Usuario;
-import penta.sisPenta.Repository.RoleRepository;
-import penta.sisPenta.Repository.UsuarioRepository;
+import penta.sisPenta.gestaoFinanceira.Model.Role;
+import penta.sisPenta.gestaoFinanceira.Model.Usuario;
+import penta.sisPenta.gestaoFinanceira.Repository.RoleRepository;
+import penta.sisPenta.gestaoFinanceira.Repository.UsuarioRepository;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ import java.util.List;
 public class UserDetailsServiceImplements implements UserDetailsService {
 
 
-    ;
+
 
     @Autowired
     UsuarioRepository usuarioRepository;
@@ -39,4 +39,6 @@ public class UserDetailsServiceImplements implements UserDetailsService {
         return user_spring;
 
     }
+
+
 }
