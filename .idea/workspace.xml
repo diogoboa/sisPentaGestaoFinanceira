@@ -5,35 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e144545-3e3c-4745-be99-ff5ae7a67e11" name="Changes" comment="inicializacao do projeto">
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/Custom/DataIntegrityViolationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/Custom/EntityNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/Custom/HttpMethodNotSupportedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/Custom/MethodArgumentNotValidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/Custom/PageNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/Custom/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/Custom/RestInvalidArgumentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/Custom/UnprocessableEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/ResourceExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/StandardError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Implements/UsuarioImplements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Consumidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Produtor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/RabbitMQAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Dto/Role/RoleDtoGET.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Dto/Usuario/UsuarioDtoGET.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Empresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Status/UsuarioSexoStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Status/UsuarioStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Repository/UsuarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Service/UsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Dto/Empresa/EmpresaSimplesPOST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Security/UserDetailsServiceImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Security/UserDetailsServiceImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Consumidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Consumidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Controlador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +51,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Diogo Boaventura/Documents/sisPentaGestaoFinanceira/src/main/java/penta/sisPenta/gestaoFinanceira",
+    "last_opened_file_path": "C:/Users/Diogo Boaventura/Documents/sisPentaGestaoFinanceira/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Dto",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2"
@@ -84,17 +59,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Diogo Boaventura\Documents\sisPentaGestaoFinanceira\src\main\java\penta\sisPenta\gestaoFinanceira\Model\Dto" />
       <recent name="C:\Users\Diogo Boaventura\Documents\sisPentaGestaoFinanceira\src\main\java\penta\sisPenta\gestaoFinanceira" />
       <recent name="C:\Users\Diogo Boaventura\Documents\sisPentaGestaoFinanceira\src\main\java\penta\sisPenta\gestaoFinanceira\Model\Status" />
       <recent name="C:\Users\Diogo Boaventura\Documents\sisPentaGestaoFinanceira\src\main\java\penta\sisPenta\gestaoFinanceira\Configuracoes" />
       <recent name="C:\Users\Diogo Boaventura\Documents\sisPentaGestaoFinanceira\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="penta.sisPenta.gestaoFinanceira.Model.Dto.Empresa" />
       <recent name="penta.sisPenta.gestaoFinanceira.Mensageria" />
       <recent name="penta.sisPenta.gestaoFinanceira.Model" />
       <recent name="penta.sisPenta.gestaoFinanceira.Implements" />
       <recent name="penta.sisPenta.gestaoFinanceira.Service" />
-      <recent name="penta.sisPenta.gestaoFinanceira.Model.Dto" />
     </key>
   </component>
   <component name="RunManager">
@@ -156,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682019071400</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="inicializacao do projeto">
+      <created>1682364662667</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682364662667</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

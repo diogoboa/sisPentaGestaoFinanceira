@@ -21,7 +21,6 @@ public class Controlador {
 */
 
     @GetMapping("/api/enviarMensagem")
-
     public String enviarMensagem() {
 
 
