@@ -7,6 +7,7 @@ import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.annotation.Argument;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.support.AmqpHeaders;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.Header;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
@@ -19,11 +20,15 @@ import penta.sisPenta.gestaoFinanceira.Exceptions.Custom.EntityNotFoundException
 import penta.sisPenta.gestaoFinanceira.Exceptions.Custom.FalhaAoSerializarMensagem;
 import penta.sisPenta.gestaoFinanceira.Exceptions.Custom.UnprocessableEntity;
 import penta.sisPenta.gestaoFinanceira.Model.Dto.Empresa.EmpresaSimplesPOST;
+import penta.sisPenta.gestaoFinanceira.Service.EmpresaService;
 
 import java.io.IOException;
 
 @Component
 public class Consumidor {
+
+    @Autowired
+    EmpresaService empresaService;
 
 
     @RabbitListener(queues = RabbitMQAdmin.QUEUE_NAME_SUGESTAO_CADASTRO_CLIENTE, ackMode = "MANUAL")
@@ -34,7 +39,7 @@ public class Consumidor {
         try {
             EmpresaSimplesPOST empresaSimplesPOST = new ObjectMapper().readValue(mensagem.getBody(), EmpresaSimplesPOST.class);
             channel.basicAck(deliveryTag, false); //mensagem processada com sucesso
-
+            empresaService.sugerir_cadastro(empresaSimplesPOST);
             System.out.println("OK mensagem processada");
 
         }catch (Exception ex_serializar)

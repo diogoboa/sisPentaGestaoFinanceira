@@ -3,6 +3,7 @@ package penta.sisPenta.gestaoFinanceira.Service;
 
 
 import org.springframework.transaction.annotation.Transactional;
+import penta.sisPenta.gestaoFinanceira.Model.Dto.Empresa.EmpresaSimplesPOST;
 import penta.sisPenta.gestaoFinanceira.Model.Empresa;
 import penta.sisPenta.gestaoFinanceira.Model.Usuario;
 
@@ -17,7 +18,7 @@ public interface EmpresaService {
 
 
     @Transactional
-    public Empresa atualizar_caso_nao_exista(Empresa empresa);
+    public void sugerir_cadastro(EmpresaSimplesPOST empresaSimplesPOST);
 
 
     @Transactional
