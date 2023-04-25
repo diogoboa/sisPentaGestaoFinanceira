@@ -2,6 +2,9 @@ package penta.sisPenta.gestaoFinanceira.Model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import penta.sisPenta.gestaoFinanceira.Model.Status.EmpresaCadastroStatus;
+import penta.sisPenta.gestaoFinanceira.Model.Status.EmpresaTransmissaoStatus;
+import penta.sisPenta.gestaoFinanceira.Model.Status.EstadosSelecao;
 
 
 import java.io.Serializable;
@@ -9,7 +12,6 @@ import java.time.Instant;
 
 @Entity
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor
-@Data
 @Table(name = "empresa")
 public class Empresa implements Serializable {
 
@@ -45,8 +47,6 @@ public class Empresa implements Serializable {
     private String cidade;
 
 
-
-
     @Column(name = "pode_faturar")
     private Boolean podeFaturar;
 
@@ -58,16 +58,15 @@ public class Empresa implements Serializable {
     private Instant ultimaAtualizacao;
 
 
-  /*  @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING)
     private EmpresaTransmissaoStatus transmissao;
 
     @Enumerated(EnumType.STRING)
     private EmpresaCadastroStatus empresaCadastroStatus;
 
- @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING)
     private EstadosSelecao uf;
 
-    */
 
 
 

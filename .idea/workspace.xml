@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e144545-3e3c-4745-be99-ff5ae7a67e11" name="Changes" comment="inicializacao do projeto" />
+    <list default="true" id="3e144545-3e3c-4745-be99-ff5ae7a67e11" name="Changes" comment="inicializacao do projeto">
+      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/Custom/FalhaAoSerializarMensagem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Implements/EmpresaImplements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Status/EmpresaCadastroStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Status/EmpresaTransmissaoStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Status/EstadosSelecao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Repository/EmpresaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Service/EmpresaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/ResourceExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/ResourceExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Consumidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Consumidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Dto/Empresa/EmpresaSimplesPOST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Dto/Empresa/EmpresaSimplesPOST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Empresa.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -42,16 +57,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Diogo Boaventura/Documents/sisPentaGestaoFinanceira/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Dto",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Diogo Boaventura/Documents/sisPentaGestaoFinanceira/src/main/java/penta/sisPenta/gestaoFinanceira/Model/Dto&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Diogo Boaventura\Documents\sisPentaGestaoFinanceira\src\main\java\penta\sisPenta\gestaoFinanceira\Model\Dto" />
@@ -61,11 +76,11 @@
       <recent name="C:\Users\Diogo Boaventura\Documents\sisPentaGestaoFinanceira\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="penta.sisPenta.gestaoFinanceira.Model.Dto.Empresa" />
-      <recent name="penta.sisPenta.gestaoFinanceira.Mensageria" />
-      <recent name="penta.sisPenta.gestaoFinanceira.Model" />
       <recent name="penta.sisPenta.gestaoFinanceira.Implements" />
       <recent name="penta.sisPenta.gestaoFinanceira.Service" />
+      <recent name="penta.sisPenta.gestaoFinanceira.Model.Status" />
+      <recent name="penta.sisPenta.gestaoFinanceira.Exceptions.Custom" />
+      <recent name="penta.sisPenta.gestaoFinanceira.Model.Dto.Empresa" />
     </key>
   </component>
   <component name="RunManager">
@@ -141,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682368858010</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="inicializacao do projeto">
+      <created>1682428815828</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682428815828</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -160,6 +182,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Produtor.java</url>
           <line>22</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/ResourceExceptionHandler.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Exceptions/ResourceExceptionHandler.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

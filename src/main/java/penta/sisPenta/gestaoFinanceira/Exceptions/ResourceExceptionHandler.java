@@ -3,6 +3,7 @@ package penta.sisPenta.gestaoFinanceira.Exceptions;
 
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.rabbit.support.ListenerExecutionFailedException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -14,7 +15,9 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 import penta.sisPenta.gestaoFinanceira.Exceptions.Custom.EntityNotFoundException;
 import penta.sisPenta.gestaoFinanceira.Exceptions.Custom.PageNotFoundException;
 import penta.sisPenta.gestaoFinanceira.Exceptions.Custom.UnprocessableEntity;
+import penta.sisPenta.gestaoFinanceira.Exceptions.Custom.FalhaAoSerializarMensagem;
 
+import java.lang.reflect.InvocationTargetException;
 import java.time.Instant;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -104,6 +107,34 @@ public class ResourceExceptionHandler {
         error.setMessage(e.getMessage());
         error.setPath(request.getRequestURI());
 
+
+        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(error);
+    }
+
+    @ExceptionHandler(FalhaAoSerializarMensagem.class)
+    public ResponseEntity<StandardError> falhaAoSerializar(FalhaAoSerializarMensagem e) {
+        StandardError error = new StandardError();
+        error.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
+        error.setTimestamp(Instant.now());
+        error.setError("Processamento não habilitado");
+        error.setMessage(e.getMessage());
+
+
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
+    }
+
+
+    @ExceptionHandler(ListenerExecutionFailedException.class)
+    public ResponseEntity<StandardError> erroAoReceberMensagemRabbitMQ(ListenerExecutionFailedException e, HttpServletRequest request){
+
+        // Customizar a mensagem de erro
+        String mensagemDeErro = "Erro no processamento da mensagem rabbitMQ";
+
+        StandardError error = new StandardError();
+        error.setStatus(HttpStatus.UNPROCESSABLE_ENTITY.value());
+        error.setTimestamp(Instant.now());
+        error.setError(mensagemDeErro);
+        error.setPath(request.getRequestURI());
 
         return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(error);
     }
