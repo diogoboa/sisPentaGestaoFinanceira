@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e144545-3e3c-4745-be99-ff5ae7a67e11" name="Changes" comment="inicializacao do projeto">
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Util/FuncoesDeString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Util/FuncoesDeValidacaoDeDados.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Util/ValidadorCPFeCNPJ.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Implements/EmpresaImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Implements/EmpresaImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Consumidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Mensageria/Consumidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Repository/EmpresaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Repository/EmpresaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Service/EmpresaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/penta/sisPenta/gestaoFinanceira/Service/EmpresaService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682450714860</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="inicializacao do projeto">
+      <created>1682452361601</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682452361601</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
