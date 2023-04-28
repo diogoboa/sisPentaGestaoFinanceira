@@ -35,11 +35,11 @@ public class Consumidor {
     @Transactional(isolation = Isolation.SERIALIZABLE)
     public void consumirMensagem(Message mensagem, Channel channel, @Header(AmqpHeaders.DELIVERY_TAG) long deliveryTag) {
 
-
         try {
             EmpresaSimplesPOST empresaSimplesPOST = new ObjectMapper().readValue(mensagem.getBody(), EmpresaSimplesPOST.class);
-            channel.basicAck(deliveryTag, false); //mensagem processada com sucesso
+            //channel.basicAck(deliveryTag, false); //mensagem processada com sucesso
             empresaService.sugerir_cadastro(empresaSimplesPOST);
+            channel.basicNack(deliveryTag, false, false); //mensagem processada com sucesso
             System.out.println("OK mensagem processada");
 
         }catch (Exception ex_serializar)
